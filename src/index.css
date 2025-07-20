@@ -1,0 +1,65 @@
+.navbar .container {
+  padding-block: 16px;
+  transition: all .3s ease-in-out
+}
+
+.navbar .container.shrink {
+  padding-block: 4.8px;
+  transition: all .3s ease-in-out
+}
+
+#avatar {
+  width: 50%
+}
+
+.line {
+  width: 5rem;
+  height: .25rem;
+  background-color: #262e33
+}
+
+.info p:nth-child(2)::after,
+.info p:nth-child(2)::before {
+  content: '-';
+  margin-inline: .3125rem
+}
+
+.form-group {
+  position: relative
+}
+
+.form-label {
+  position: absolute;
+  left: .9375rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: .5s ease;
+  z-index: -1;
+}
+
+.form-control.typing+.form-label {
+  top: 0;
+  color: #0d6efd;
+  z-index: 1;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: none
+}
+
+.overlay {
+  inset: 0;
+  transition: opacity .4s ease-in-out;
+}
+
+.fa-plus {
+  font-size: 88px;
+}
+.modal-dialog {
+  --bs-modal-width: 37.5rem;
+}
+.modal.fade .modal-dialog {
+    transform: translate(0,0);
+}
