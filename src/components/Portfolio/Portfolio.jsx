@@ -5,12 +5,12 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 function Portfolio() {
     const gallery = [
-        { image: 'src/assets/cabin.png' },
-        { image: 'src/assets/cake.png' },
-        { image: 'src/assets/circus.png' },
-        { image: 'src/assets/game.png' },
-        { image: 'src/assets/safe.png' },
-        { image: 'src/assets/submarine.png' }
+        { image: '/cabin.png' },
+        { image: '/cake.png' },
+        { image: '/circus.png' },
+        { image: '/game.png' },
+        { image: '/safe.png' },
+        { image: '/submarine.png' }
     ];
 
     const [hoveredItem, setHoveredItem] = useState(null);
