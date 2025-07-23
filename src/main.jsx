@@ -9,6 +9,7 @@ import Contact from './components/Contact/Contact.jsx'
 import Home from './components/Home/Home.jsx'
 import Layout from './components/Layout/Layout.jsx'
 import Portfolio from './components/Portfolio/Portfolio.jsx'
+import NotFound from './components/NotFound/NotFound.jsx'
 
 const navs = createBrowserRouter([
     {
@@ -17,7 +18,7 @@ const navs = createBrowserRouter([
             { path: 'about', element: <About /> },
             { path: 'portfolio', element: <Portfolio /> },
             { path: 'contact', element: <Contact /> },
-            { path: '*', element: '' }
+            { path: '*', element: <NotFound/> }
         ]
     }
 ])
